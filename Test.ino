@@ -117,6 +117,8 @@ void printTime() {
   localtime_r(&now, &timeInfo);
   //gmtime_r(&now, &timeInfo);
 
+  //char buf[64] = "";
+  //strftime(buf, sizeof(buf), "%c", &timeInfo);
   Serial.print("Current time: ");
   Serial.println(asctime(&timeInfo));
 }
