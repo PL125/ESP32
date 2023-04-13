@@ -195,7 +195,7 @@ std::string parseBloodValues(float *blood) {
 
 /*
   std::string str = "";
-  char *pStr = nullptr;
+  char *pStr = 0;
 
   int size = asprintf(&pStr, "%4.4f;%4.4f;%4.4f;%4.4f;%4.4f;%4.4f;%4.4f;%4.4f;%4.4f;%4.4f;", blood[0], blood[1],
     blood[2], blood[3], blood[4], blood[5], blood[6], blood[7], blood[8], blood[9]);
