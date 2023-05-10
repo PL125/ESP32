@@ -112,7 +112,9 @@ bool timeIsSet() {
 
 void printTime() {
   struct tm timeInfo;
+  //time_t now = time(nullptr);
   time_t now = time(NULL);
+  //time_t now = time(0);
 
   localtime_r(&now, &timeInfo);
   //gmtime_r(&now, &timeInfo);
@@ -121,6 +123,9 @@ void printTime() {
   //strftime(buf, sizeof(buf), "%c", &timeInfo);
   Serial.print("Current time: ");
   Serial.println(asctime(&timeInfo));
+  //Serial.printf(" %s\n", asctime(localtime(&now)));
+  //Serial.printf(" %s\n", ctime(&now));
+  //Serial.printf("Seconds since Epoch: %lu\n", now);
 }
 
 
